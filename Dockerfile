@@ -1,0 +1,16 @@
+FROM redis:3
+
+ENV SOURCE_PATH /srv/rest-dev-ha
+
+WORKDIR $SOURCE_PATH
+ADD ./config $SOURCE_PATH/config
+ADD ./dist/redis-ha-dev $SOURCE_PATH/redis-ha-dev
+
+EXPOSE 1712
+EXPOSE 6379
+EXPOSE 6380
+EXPOSE 26379
+EXPOSE 26380
+EXPOSE 26381
+
+CMD ./redis-ha-dev
