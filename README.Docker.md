@@ -4,6 +4,9 @@ The purpose of this docker image is to allow easier development against a Redis 
 **Warning**
 This image breaks traditional Docker paradigms by running multiple instances of redis in a single container. Running multiple applications in a single container shouldn't be practiced in production and as such this image is not meant for production. There is no benefit other than development to utilize this image.
 
+# GitHub
+You may find the GitHub link at [Howard3/redis-ha-dev](https://github.com/Howard3/redis-ha-dev)
+
 # Running The Container
 Run the following command to run the Redis HA Sentinel Example:
 ```
